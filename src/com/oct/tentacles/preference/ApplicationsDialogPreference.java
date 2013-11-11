@@ -41,7 +41,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.oct.tentacles.R;
-import com.oct.tentacles.SettingsPreferenceFragment;
 
 import java.util.Collections;
 import java.util.LinkedList;

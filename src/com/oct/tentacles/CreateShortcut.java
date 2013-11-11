@@ -38,7 +38,7 @@ public class CreateShortcut extends LauncherActivity {
         String intentClass = shortcutIntent.getComponent().getClassName();
 
         shortcutIntent = new Intent();
-        shortcutIntent.setClass(getApplicationContext(), CrSettingsActivity.class);
+        shortcutIntent.setClass(getApplicationContext(), SettingsActivity.class);
         shortcutIntent.setAction("com.oct.tentacles.START_NEW_FRAGMENT");
         shortcutIntent.putExtra("oct_fragment_name", intentClass);
         shortcutIntent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
