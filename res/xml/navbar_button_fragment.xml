@@ -17,7 +17,11 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <PreferenceScreen
+<<<<<<< HEAD
         android:fragment="com.oct.tentacles.fragments.navbar.NavBarButtonStyle"
+=======
+        android:fragment="com.carbon.fibers.fragments.navbar.NavBarButtonStyle"
+>>>>>>> 2131a01... Settings: Slims navbar and navring customizations
         android:key="nav_bar_button_style"
         android:title="@string/nav_bar_button_style"
         android:summary="@string/nav_bar_button_style_summary" />

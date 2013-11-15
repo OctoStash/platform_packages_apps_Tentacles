@@ -65,4 +65,8 @@
         android:layout_gravity="center_vertical"
         android:scaleType="centerInside"
         android:contentDescription="@null" />
+<<<<<<< HEAD
 </GridLayout>
+=======
+</GridLayout>
+>>>>>>> 2131a01... Settings: Slims navbar and navring customizations

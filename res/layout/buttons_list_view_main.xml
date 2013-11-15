@@ -16,7 +16,11 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     xmlns:settings="http://schemas.android.com/apk/res/com.oct.tentacles"
+=======
+    xmlns:settings="http://schemas.android.com/apk/res/com.carbon.fibers"
+>>>>>>> 2131a01... Settings: Slims navbar and navring customizations
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -42,7 +46,11 @@
         android:text="@string/shortcut_action_disable_message"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:visibility="gone" />
+<<<<<<< HEAD
     <com.oct.tentacles.dslv.DragSortListView
+=======
+    <com.carbon.fibers.dslv.DragSortListView
+>>>>>>> 2131a01... Settings: Slims navbar and navring customizations
         android:id="@android:id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
