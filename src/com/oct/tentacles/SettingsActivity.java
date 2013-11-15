@@ -197,9 +197,9 @@ public class SettingsActivity extends PreferenceActivity implements ButtonBarHan
 
     private static final String[] ENTRY_FRAGMENTS = {
         InterfaceSettings.class.getName(),
-		KeyguardSettings.class.getName(),
-		LockscreenNotifications.class.getName(),
-		MoreDeviceSettings.class.getName(),
+	KeyguardSettings.class.getName(),
+	LockscreenNotifications.class.getName(),
+	MoreDeviceSettings.class.getName(),
         SbSettings.class.getName(),
         PowerMenuFragment.class.getName(),
         PowerMenuStyle.class.getName(),
