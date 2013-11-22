@@ -8,5 +8,11 @@
             android:fragment="com.oct.tentacles.fragments.ButtonSettings"
             android:icon="@drawable/ic_tentacles_button"
             android:title="@string/button_settings" />
+			
+        <header
+            android:id="@+id/statusbar_settings"
+            android:title="@string/status_bar_title"
+            android:icon="@drawable/ic_tentacles_sb"
+            android:fragment="com.oct.tentacles.fragments.sb.SbSettings" />
 
 </preference-headers>

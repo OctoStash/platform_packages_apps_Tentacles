@@ -1,5 +1,3 @@
-
-package com.oct.tentacles;
 /*
  * Copyright (C) 2014 Team OctOS
  *
@@ -16,7 +14,7 @@ package com.oct.tentacles;
  * limitations under the License.
  */
 
-
+package com.oct.tentacles;
 
 import android.app.Dialog;
 
