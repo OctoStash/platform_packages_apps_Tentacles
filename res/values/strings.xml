@@ -100,6 +100,11 @@
     <string name="title_tile_volume">Volume</string>
     <string name="title_tile_expanded_desktop">Expanded desktop</string>
     <string name="title_tile_network_adb">ADB over network</string>
+<<<<<<< HEAD
+=======
+    <string name="title_tile_music">Music playback</string>
+    <string name="title_tile_immersive">Immersive mode</string>
+>>>>>>> 2d2d1b8... Immersive Mode tile (2/2)
 
     <string name="title_dynamic_tiles">Dynamic tiles</string>
     <string name="dynamic_tiles_note_title">Note</string>
@@ -867,6 +872,7 @@
     <string name="icon_presets">System icons</string>
     <string name="icon_custom">Gallery</string>
 
+<<<<<<< HEAD
     <string name="shortcuts_icon_picker_alarm">Alarm</string>
     <string name="shortcuts_icon_picker_andy">Andy</string>
     <string name="shortcuts_icon_picker_battery">Battery</string>
@@ -919,5 +925,16 @@
     <string name="shortcuts_icon_picker_tv">TV</string>
     <string name="shortcuts_icon_picker_twitter">Twitter</string>
     <string name="shortcuts_icon_picker_unlock">Unlock</string>
+=======
+    <!-- Power menu enable disable -->
+    <string name="power_menu_title">Power menu</string>
+    <string name="power_menu_immersive_title">Immersive</string>
+    <string name="power_menu_reboot_title">Reboot menu</string>
+    <string name="power_menu_screenshot_title">Screenshot</string>
+    <string name="power_menu_profiles_title">Profile switcher</string>
+    <string name="power_menu_airplane_title">Airplane mode</string>
+    <string name="power_menu_user_title">User switcher</string>
+    <string name="power_menu_sound_title">Sound panel</string>
+>>>>>>> 2d2d1b8... Immersive Mode tile (2/2)
 
 </resources>
