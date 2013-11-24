@@ -169,6 +169,9 @@ public class QuickSettingsUtil {
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_QUICKRECORD, R.string.title_tile_quick_record,
                 "com.android.systemui:drawable/ic_qs_quickrecord"));
+        registerTile(new QuickSettingsUtil.TileInfo(
+                TILE_IMMERSIVE, R.string.title_tile_immersive,
+                "com.android.systemui:drawable/ic_qs_immersive_off"));
     }
 
     private static void registerTile(QuickSettingsUtil.TileInfo info) {
