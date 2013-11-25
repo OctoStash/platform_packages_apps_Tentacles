@@ -91,7 +91,9 @@ public class PieTab extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new PieControl();
+            frags[0] = new BatterySettings();
+            frags[1] = new NotificationDrawer();
+            frags[2] = new QuickSettings();
         }
 
         @Override
@@ -113,7 +115,9 @@ public class PieTab extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.pie_control_title)};
+                    getString(R.string.sb_battery_category),
+                    getString(R.string.sb_notification_category),
+                    getString(R.string.sb_quicksettings_category)};
         return titleString;
     }
 }
