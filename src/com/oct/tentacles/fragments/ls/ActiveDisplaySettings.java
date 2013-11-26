@@ -68,7 +68,6 @@ public class ActiveDisplaySettings extends SettingsPreferenceFragment implements
 
     private ContentResolver mResolver;
     private Context mContext;
-
     private SwitchPreference mEnabledPref;
     private CheckBoxPreference mShowTextPref;
     private CheckBoxPreference mShowContentPref;
