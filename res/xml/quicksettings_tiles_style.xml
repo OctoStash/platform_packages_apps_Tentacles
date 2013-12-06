@@ -43,6 +43,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+
         android:title="@string/quicksettings_tiles_style_additional_options"
         android:key="quicksettings_tiles_style_additional_options">
 
