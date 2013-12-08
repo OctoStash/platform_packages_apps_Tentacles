@@ -148,6 +148,20 @@ public class SbGeneralSettings extends SettingsPreferenceFragment implements OnP
         }
         mStatusBarNetworkStatsTextColor.setNewPreviewColor(intNetworkColor);
 
+        mIconColor = (ColorPickerPreference) findPreference(PREF_SYSTEM_ICON_COLOR);
+        mIconColor.setOnPreferenceChangeListener(this);
+        intColor = Settings.System.getInt(getActivity().getContentResolver(),
+                    Settings.System.SYSTEM_ICON_COLOR, -1);
+        mIconColor.setSummary(getResources().getString(R.string.default_string));
+        if (intColor == 0xffffffff) {
+            intColor = systemUiResources.getColor(systemUiResources.getIdentifier(
+                    "com.android.systemui:color/status_bar_clock_color", null, null));
+        } else {
+            hexColor = String.format("#%08x", (0xffffffff & intColor));
+            mIconColor.setSummary(hexColor);
+        }
+        mIconColor.setNewPreviewColor(intColor);
+
         mCheckPreferences = true;
         return prefSet;
     }
@@ -182,7 +196,6 @@ public class SbGeneralSettings extends SettingsPreferenceFragment implements OnP
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.STATUS_BAR_NETWORK_STATS_TEXT_COLOR, intHex);
             return true;
-
         }
         return false;
     }
@@ -206,6 +219,7 @@ public class SbGeneralSettings extends SettingsPreferenceFragment implements OnP
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.CUSTOM_SYSTEM_ICON_COLOR,
             mCustomIconColor.isChecked() ? 1 : 0);
+            Helpers.restartSystemUI();
             return true;
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
