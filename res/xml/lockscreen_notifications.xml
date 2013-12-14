@@ -1,6 +1,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/lockscreen_notifications"
+
     xmlns:settings="http://schemas.android.com/apk/res/com.oct.tentacles">
 
     <PreferenceCategory
