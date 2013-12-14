@@ -226,6 +226,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             mVolumeKeyCursorControl = initActionList(KEY_VOLUME_KEY_CURSOR_CONTROL,
                     cursorControlAction);
 
+        mEnableCustomBindings =
+                (CheckBoxPreference) prefScreen.findPreference(KEY_ENABLE_CUSTOM_BINDING);
+
             if (!res.getBoolean(R.bool.config_show_volumeRockerWake)) {
                 volumeCategory.removePreference(findPreference(Settings.System.VOLUME_WAKE_SCREEN));
             }
@@ -314,6 +317,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             boolean isCameraWakeEnabled = mCameraWake.isChecked();
             mCameraMusicControls.setEnabled(!isCameraWakeEnabled);
             mCameraSleepOnRelease.setEnabled(isCameraWakeEnabled);
+
+        if (preference == mEnableCustomBindings) {
+            handleCheckboxClick(mEnableCustomBindings, Settings.System.HARDWARE_KEY_REBINDING);
             return true;
         }
 
