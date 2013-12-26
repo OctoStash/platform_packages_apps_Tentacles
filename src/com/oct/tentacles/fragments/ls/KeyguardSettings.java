@@ -90,8 +90,8 @@ public class KeyguardSettings extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new ActiveDisplaySettings();
-			frags[1] = new LockscreenNotifications();
-			frags[2] = new LockscreenTargets();
+	    frags[1] = new LockscreenNotifications();
+	    frags[2] = new LockscreenTargets();
         }
 
         @Override
