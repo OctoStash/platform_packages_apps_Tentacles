@@ -147,7 +147,6 @@ public class SbGeneralSettings extends SettingsPreferenceFragment implements OnP
               mStatusBarNetworkStatsTextColor.setSummary(hexColor);
         }
         mStatusBarNetworkStatsTextColor.setNewPreviewColor(intNetworkColor);
-
         mIconColor = (ColorPickerPreference) findPreference(PREF_SYSTEM_ICON_COLOR);
         mIconColor.setOnPreferenceChangeListener(this);
         intColor = Settings.System.getInt(getActivity().getContentResolver(),
@@ -187,7 +186,6 @@ public class SbGeneralSettings extends SettingsPreferenceFragment implements OnP
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.SYSTEM_ICON_COLOR, intHex);
             return true;
-
         } else if (preference == mStatusBarNetworkStatsTextColor) {
             String hex = ColorPickerPreference.convertToARGB(Integer.valueOf(String
                     .valueOf(newValue)));
@@ -219,7 +217,6 @@ public class SbGeneralSettings extends SettingsPreferenceFragment implements OnP
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.CUSTOM_SYSTEM_ICON_COLOR,
             mCustomIconColor.isChecked() ? 1 : 0);
-            Helpers.restartSystemUI();
             return true;
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
