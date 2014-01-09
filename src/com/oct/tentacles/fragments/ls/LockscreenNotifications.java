@@ -30,6 +30,10 @@ import java.util.Set;
 
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
 public class LockscreenNotifications extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
     private static final String KEY_LOCKSCREEN_NOTIFICATIONS = "lockscreen_notifications";
