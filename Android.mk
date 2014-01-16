@@ -15,6 +15,7 @@ LOCAL_RESOURCE_DIR += $(LOCAL_PATH)/res
 LOCAL_AAPT_FLAGS := --auto-add-overlay
 
 LOCAL_PACKAGE_NAME := Tentacles
+
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVIELEGED_MODULE := true
 
