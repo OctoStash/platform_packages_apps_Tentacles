@@ -622,5 +622,4 @@ public class LockscreenTargets extends Fragment implements
 
         }
     }
-
 }

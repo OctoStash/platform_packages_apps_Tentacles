@@ -12,7 +12,10 @@
     <string name="add">Add</string>
     <string name="save">Save</string>
     <string name="reset">Reset</string>
+<<<<<<< HEAD
     <string name="reset_message">Reset all entries to default?</string>
+=======
+>>>>>>> c37a61a... Switch over to Slim's lockscreen stuff.
     <string name="attention">Attention</string>
     <string name="empty">Empty</string>
     <string name="delete">Delete</string>
@@ -456,8 +459,11 @@
     <string name="lockscreen_eight_targets_summary">Enable eight custom lock screen targets.</string>
     <string name="lockscreen_enable_eight_targets_dialog">Changing this option resets your current lockscreen targets setup to default.</string>
     <string name="lockscreen_enable_eight_targets_enabled_dialog">\n\nWith eight lockscreen targets enabled you cannot use your lockscreen shortcuts at the same time.</string>
+<<<<<<< HEAD
     <string name="lockscreen_glowpad_torch_title">Slider torch</string>
     <string name="lockscreen_glowpad_torch_summary">Double-tap and hold the slider to start torch</string>
+=======
+>>>>>>> c37a61a... Switch over to Slim's lockscreen stuff.
     <string name="lockscreen_target_reset">Lock screen targets reset to default</string>
     <string name="lockscreen_target_reset_message">Delete all user created lock screen targets and restore to default?</string>
     <string name="lockscreen_target_empty">None</string>
@@ -1154,15 +1160,10 @@
     <string name="shortcut_action_help_main">To add a %1$s, select the Add icon.  Once a %1$s is added, selecting the row will change the target%2$s\n\nTo remove a %1$s, swipe the row horizontally left or right.  Re-order a %1$s in the list by vertically dragging the anchor on the left.\n\nTo clear or reset to defaults, select the Reset icon.</string>
     <string name="shortcut_action_help_delete_last_entry">Removing every %1$s in the list will disable the feature entirely.</string>
     <string name="shortcut_action_help">Help</string>
-    <string name="icon_picker_type">Select icon type:</string>
 
     <string name="icon_color_mode_all_icons">All icons</string>
     <string name="icon_color_mode_system_icons">System icons</string>
     <string name="icon_color_mode_system_custom_icons">System and custom icons</string>
-
-    <string name="icon_default">Default</string>
-    <string name="icon_presets">System icons</string>
-    <string name="icon_custom">Gallery</string>
 
     <string name="shortcuts_icon_picker_alarm">Alarm</string>
     <string name="shortcuts_icon_picker_andy">Andy</string>
