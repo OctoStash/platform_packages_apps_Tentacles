@@ -28,29 +28,17 @@
 
             <PreferenceScreen
                     android:key="navbar_button_settings"
-<<<<<<< HEAD
                     android:fragment="com.oct.tentacles.dslv.ButtonsListViewSettings"
-=======
-                    android:fragment="com.carbon.fibers.dslv.ButtonsListViewSettings"
->>>>>>> 2131a01... Settings: Slims navbar and navring customizations
                     android:title="@string/navbar_button_title">
                 <extra android:name="buttonMode" android:value="0" />
                 <extra android:name="maxAllowedButtons" android:value="5" />
                 <extra android:name="disableDeleteLastEntry" android:value="true" />
-<<<<<<< HEAD
                 <extra android:name="fragment" android:value="com.oct.tentacles.fragments.navbar.NavbarButtonFragment" />
-=======
-                <extra android:name="fragment" android:value="com.carbon.fibers.fragments.navbar.NavbarButtonFragment" />
->>>>>>> 2131a01... Settings: Slims navbar and navring customizations
             </PreferenceScreen>
 
             <PreferenceScreen
                     android:key="navbar_targets_settings"
-<<<<<<< HEAD
                     android:fragment="com.oct.tentacles.dslv.ButtonsListViewSettings"
-=======
-                    android:fragment="com.carbon.fibers.dslv.ButtonsListViewSettings"
->>>>>>> 2131a01... Settings: Slims navbar and navring customizations
                     android:title="@string/navbar_targets_title">
                 <extra android:name="buttonMode" android:value="3" />
                 <extra android:name="maxAllowedButtons" android:value="5" />
@@ -60,22 +48,14 @@
 
             <PreferenceScreen
                 android:key="navbar_style_dimen_settings"
-<<<<<<< HEAD
                 android:fragment="com.oct.tentacles.fragments.navbar.NavbarStyleDimenSettings"
-=======
-                android:fragment="com.carbon.fibers.fragments.navbar.NavbarStyleDimenSettings"
->>>>>>> 2131a01... Settings: Slims navbar and navring customizations
                 android:title="@string/navbar_style_dimen_title" />
 
         </PreferenceCategory>
 
         <PreferenceCategory
                 android:key="advanced_cat"
-<<<<<<< HEAD
                 android:title="@string/advanced_settings" />
-=======
-                android:title="@string/advanced_settings">
->>>>>>> 2131a01... Settings: Slims navbar and navring customizations
 
             <ListPreference
                     android:key="pref_navbar_menu_display"
@@ -96,9 +76,4 @@
                     android:title="@string/navbar_can_move"
                     android:summary="@string/navbar_can_move_summary" />
 
-<<<<<<< HEAD
-=======
-        </PreferenceCategory>
-
->>>>>>> 2131a01... Settings: Slims navbar and navring customizations
 </PreferenceScreen>
