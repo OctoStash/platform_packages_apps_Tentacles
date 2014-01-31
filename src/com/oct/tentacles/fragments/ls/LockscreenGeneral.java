@@ -97,7 +97,7 @@ public class LockscreenGeneral extends SettingsPreferenceFragment implements
 
     private File mWallpaperTemporary;
 
-    private CheckBoxPreference mLockRingBattery;
+    private File mWallpaperTemporary;
 
     private Activity mActivity;
     private ContentResolver mResolver;
