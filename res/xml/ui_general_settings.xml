@@ -53,17 +53,13 @@
             android:title="@string/power_menu_expanded_desktop"
             android:persistent="true" />
 
-    <ListPreference
-            android:key="expanded_desktop"
-            android:title="@string/power_menu_expanded_desktop"
-            android:entries="@array/expanded_desktop_entries"
-            android:entryValues="@array/expanded_desktop_values"
-            android:persistent="false" />
+    <!-- Smooth custom ProgressBar -->
 
-    <CheckBoxPreference
-            android:key="expanded_desktop_no_navbar"
-            android:title="@string/power_menu_expanded_desktop"
-            android:persistent="true" />
+    <PreferenceScreen
+        android:key="progressbar"
+        android:fragment="com.carbon.fibers.fragments.ui.ProgressBar"
+        android:title="@string/progressbar_title" >
+    </PreferenceScreen>
 
     <!-- Device Specific Touchscreen gestures -->
     <Preference
