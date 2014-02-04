@@ -648,5 +648,45 @@
     <string name="shortcuts_icon_picker_tv">TV</string>
     <string name="shortcuts_icon_picker_twitter">Twitter</string>
     <string name="shortcuts_icon_picker_unlock">Unlock</string>
- 
+
+    <!-- ListView animation -->
+    <string name="listview_animation_title">ListView animation</string>
+    <string name="listview_off">Default</string>
+    <string name="listview_wave_left">Wave (left)</string>
+    <string name="listview_wave_right">Wave (right)</string>
+    <string name="listview_alpha">Alpha</string>
+    <string name="listview_scale">Scale</string>
+    <string name="listview_stack_top">Stack (top)</string>
+    <string name="listview_stack_bottom">Stack (bottom)</string>
+    <string name="listview_unfold">Unfold</string>
+    <string name="listview_fold">Fold</string>
+    <string name="listview_translate_left">Translate (left)</string>
+    <string name="listview_translate_right">Translate (right)</string>
+
+    <!-- ListView interpolator -->
+    <string name="listview_interpolator_title">ListView interpolator</string>
+    <string name="listview_accelerate_interpolator">Accelerate</string>
+    <string name="listview_decelerate_interpolator">Decelerate</string>
+    <string name="listview_accelerate_decelerate_interpolator">Accelerate and decelerate</string>
+    <string name="listview_anticipate_interpolator">Anticipate</string>
+    <string name="listview_overshoot_interpolator">Overshoot</string>
+    <string name="listview_anticipate_overshoot_interpolator">Anticipate and overshoot</string>
+    <string name="listview_bounce_interpolator">Bounce</string>
+
+    <!-- Lockscreen style settings -->
+    <string name="lockscreen_style_reset_message">Reset all lockscreen colors?</string>
+    <string name="lockscreen_icon_title">Lock handle icon</string>
+    <string name="lockscreen_lock_icon_custom">Custom icon</string>
+    <string name="lockscreen_lock_icon_carbon">Carbon icon</string>
+    <string name="lockscreen_lock_icon_default">Default icon</string>
+    <string name="lockscreen_colorize_handle_title">Colorize custom handle</string>
+    <string name="lockscreen_colorize_handle_summary">Lock color will be set to the lock handle</string>
+    <string name="lockscreen_style_title">Theme style</string>
+    <string name="lockscreen_frame_color_title">Frame color</string>
+    <string name="lockscreen_frame_color_summary">Color of the widget and unlock frames</string>
+    <string name="lockscreen_lock_color_title">Lock color</string>
+    <string name="lockscreen_lock_color_summary">Color of the lock handles</string>
+    <string name="lockscreen_dots_color_title">Dots color</string>
+    <string name="lockscreen_dots_color_summary">Color of the glowpad dots</string>
+
 </resources>
