@@ -47,7 +47,7 @@ import com.oct.tentacles.fragments.ui.*;
 
 public class SettingsActivity extends PreferenceActivity implements ButtonBarHandler {
 
-    private static final String TAG = "CR_Settings";
+    private static final String TAG = "OCT_Settings";
 
     private static String KEY_USE_ENGLISH_LOCALE = "use_english_locale";
 
