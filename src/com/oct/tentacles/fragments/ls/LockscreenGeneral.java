@@ -83,6 +83,8 @@ public class LockscreenGeneral extends SettingsPreferenceFragment implements
 
     private static final String BATTERY_AROUND_LOCKSCREEN_RING = "battery_around_lockscreen_ring";
 
+    private static final String BATTERY_AROUND_LOCKSCREEN_RING = "battery_around_lockscreen_ring";
+
     private ListPreference mBatteryStatus;
     private CheckBoxPreference mSeeThrough;
     private SeekBarPreference mBlurRadius;
@@ -94,6 +96,8 @@ public class LockscreenGeneral extends SettingsPreferenceFragment implements
     private Preference mSelectLockscreenWallpaper;
 
     private File mWallpaperTemporary;
+
+    private CheckBoxPreference mLockRingBattery;
 
     private Activity mActivity;
     private ContentResolver mResolver;
