@@ -46,7 +46,20 @@
             android:title="@string/more_device_controls_title"
             android:icon="@drawable/ic_tentacles_device"
             android:fragment="com.oct.tentacles.fragments.MoreDeviceSettings" />
-            
+
+        <header
+            android:id="@+id/statusbar_settings"
+            android:title="@string/sb_quicksettings_category"
+            android:icon="@drawable/ic_tentacles_sb"
+            android:fragment="com.oct.tentacles.fragments.sb.SbSettings" />
+
+				
+        <header
+            android:key="@+id/quiet_hours_settings"
+            android:title="@string/quiet_hours_title"
+            android:icon="@drawable/ic_quiethours"
+            android:fragment="com.oct.tentacles.quiethours.QuietHours" />
+
         <header
             android:id="@+id/power_menu_setings"
             android:title="@string/power_menu_title"
@@ -60,12 +73,6 @@
                 <extra android:name="actionEntries" android:value="shortcut_action_power_menu_entries" />
                 <extra android:name="fragment" android:value="com.oct.tentacles.fragments.PowerMenuFragment" />
         </header>
-
-        <header
-            android:id="@+id/statusbar_settings"
-            android:title="@string/sb_quicksettings_category"
-            android:icon="@drawable/ic_tentacles_sb"
-            android:fragment="com.oct.tentacles.fragments.sb.SbSettings" />
             
     	<!-- SuperSU -->
     	<header
