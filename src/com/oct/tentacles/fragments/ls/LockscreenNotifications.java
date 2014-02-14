@@ -1,12 +1,5 @@
 package com.oct.tentacles.fragments.ls;
 
-
-
-<<<<<<< HEAD:src/com/oct/tentacles/fragments/ls/LockscreenNotifications.java
-=======
-
-
->>>>>>> d64167d... LS Notifications: Custom Background color [2/2]:src/com/carbon/fibers/fragments/ls/LockscreenNotifications.java
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.pm.PackageManager;

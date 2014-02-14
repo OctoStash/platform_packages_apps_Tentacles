@@ -963,7 +963,6 @@
     <string name="general">General</string>
     <string name="layout">Layout</string>
     <string name="privacy">Privacy</string>
-
     <string name="lockscreen_notifications">Lockscreen notifications</string>
     <string name="notification_color">Notification background color</string>
     <string name="lockscreen_notifications_summary">Show pending notifications on lockscreen</string>
