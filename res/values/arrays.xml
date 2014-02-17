@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<<<<<<< HEAD
-        <string-array name="entries_network_widget" translatable="false">
-=======
-
     <!-- Clear recents button -->
     <string-array name="clear_recents_entries" translatable="false">
         <item>@string/clear_button_off</item>
@@ -117,7 +113,6 @@
     </string-array>
 
     <string-array name="entries_network_widget" translatable="false">
->>>>>>> ebc7971... [2/2] CarbonFibers: Add ActiveDisplay settings to menu
         <item>2G | 2G+3G</item>
         <item>2G | 3G</item>
         <item>2G | 3G | 2G+3G</item>
