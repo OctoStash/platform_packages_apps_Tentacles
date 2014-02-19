@@ -1059,6 +1059,12 @@
     <string name="lockscreen_buttons_playpause">Play/Pause music</string>
     <string name="lockscreen_buttons_toggle_sound">Toggle sound</string>
     <string name="lockscreen_buttons_sleep">Go to sleep</string>
+    <string name="unlock_camera_unlock_title">Camera unlock</string>
+    <string name="unlock_camera_unlock_summary">Pressing the camera button unlocks the device</string>
+    <string name="unlock_menu_unlock_title">Menu unlock</string>
+    <string name="unlock_menu_unlock_summary">Pressing the menu button unlocks the device</string>
+    <string name="unlock_home_unlock_title">Home unlock</string>
+    <string name="unlock_home_unlock_summary">Pressing the home button unlocks the device</string>
 
     <!-- Lock screen battery status -->
     <string name="lockscreen_battery_status_title">Battery status</string>
