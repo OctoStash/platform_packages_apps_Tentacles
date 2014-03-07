@@ -56,6 +56,9 @@
     <string name="ics_color">Holo</string>
 
     <!-- Quick settings panel  -->
+    <string name="status_bar_title">Statusbar</string>
+    <string name="notification_category">Notification Drawer</string>
+    <string name="quicksettings_category">Quick Settings</string>
     <string name="quick_settings_panel_title">Quick Settings panel</string>
     <string name="title_static_tiles">Static tiles</string>
     <string name="tile_picker_title">Tiles and layout</string>
