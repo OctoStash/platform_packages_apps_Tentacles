@@ -41,15 +41,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".fragments.ButtonSettings"
-            android:label="@string/button_settings" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="com.oct.tentacles.SHORTCUT" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".fragments.ui.InterfaceSettings"
             android:label="@string/user_interface" >
             <intent-filter>
