@@ -37,7 +37,7 @@ public class NotificationDrawer extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.sb_notification_drawer);
+        addPreferencesFromResource(R.xml.notification_drawer);
         PreferenceScreen prefScreen = getPreferenceScreen();
 
         // Notification drawer

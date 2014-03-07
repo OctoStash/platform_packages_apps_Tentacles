@@ -39,7 +39,6 @@ import android.widget.TextView;
 // fragments import for entry
 import com.oct.tentacles.fragments.*;
 import com.oct.tentacles.fragments.sb.*;
-import com.oct.tentacles.fragments.ui.*;
 
 public class SettingsActivity extends PreferenceActivity implements ButtonBarHandler {
 
@@ -149,25 +148,6 @@ public class SettingsActivity extends PreferenceActivity implements ButtonBarHan
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        AdapterContextMenuInfo info = (AdapterContextMenuInfo) item.getMenuInfo();
-        switch (item.getItemId()) {
-            case R.id.change_locale:
-                Log.e(TAG, "change_locale clicked");
-                SharedPreferences p = getPreferences(MODE_PRIVATE);
-                boolean useEnglishLocale = p.getBoolean(KEY_USE_ENGLISH_LOCALE, false);
-                p.edit().putBoolean(KEY_USE_ENGLISH_LOCALE, !useEnglishLocale).apply();
-                recreate();
-                return true;
-            case android.R.id.home:
-                onBackPressed();
-                return true;
-            default:
-                return super.onContextItemSelected(item);
-        }
-    }
-
     private void setLocale() {
         SharedPreferences p = getPreferences(MODE_PRIVATE);
         boolean useEnglishLocale = p.getBoolean(KEY_USE_ENGLISH_LOCALE, false);
@@ -193,8 +173,6 @@ public class SettingsActivity extends PreferenceActivity implements ButtonBarHan
     }
 
     private static final String[] ENTRY_FRAGMENTS = {
-        ButtonSettings.class.getName(),
-        InterfaceSettings.class.getName(),
         PowerMenuSettings.class.getName(),
         SbSettings.class.getName(),
         QuickSettingsTiles.class.getName()

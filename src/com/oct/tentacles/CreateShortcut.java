@@ -56,9 +56,6 @@ public class CreateShortcut extends LauncherActivity {
     private int getProperShortcutIcon(String className) {
         String c = className.substring(className.lastIndexOf(".") + 1);
 
-        if (c.equals("Buttons"))
-            return R.drawable.ic_oct_buttons;
-        else
             return R.mipmap.ic_launcher;
     }
 
