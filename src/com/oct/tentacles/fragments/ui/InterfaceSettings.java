@@ -1,6 +1,8 @@
 /*
  * Copyright (C) 2013 Carbon Development
  *
+ * Modded by OctOS, Thanks to CarbonDev
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -89,7 +91,8 @@ public class InterfaceSettings extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new RecentsPanel();
+            frags[0] = new GeneralSettings();
+            frags[1] = new RecentsPanel();
         }
 
         @Override
@@ -110,7 +113,8 @@ public class InterfaceSettings extends SettingsPreferenceFragment {
 
     private String[] getTitles() {
         String titleString[];
-        titleString = new String[]{
+        titleString = new String[] {
+                    getString(R.string.ui_general_category),
                     getString(R.string.ui_recents_category)};
         return titleString;
     }

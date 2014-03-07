@@ -1,5 +1,7 @@
 /*
- * Copyright (C) 2012 The Carbon-Rom project
+ * Copyright (C) 2012 The CarbonRom project
+ *
+ * Modded by OctOS, Thanks to CarbonDev
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 Team OctOS
+ * Copyright (C) 2010 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -57,7 +57,7 @@ public class CreateShortcut extends LauncherActivity {
         String c = className.substring(className.lastIndexOf(".") + 1);
 
         if (c.equals("Buttons"))
-            return R.drawable.ic_oct_buttons;
+            return R.drawable.ic_tentacles_button;
         else
             return R.mipmap.ic_launcher;
     }

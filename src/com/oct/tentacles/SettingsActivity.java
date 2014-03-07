@@ -37,13 +37,17 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 // fragments import for entry
+import com.oct.tentacles.dslv.*;
 import com.oct.tentacles.fragments.*;
+import com.oct.tentacles.fragments.ls.*;
+import com.oct.tentacles.fragments.navbar.*;
+import com.oct.tentacles.fragments.pie.*;
 import com.oct.tentacles.fragments.sb.*;
 import com.oct.tentacles.fragments.ui.*;
 
 public class SettingsActivity extends PreferenceActivity implements ButtonBarHandler {
 
-    private static final String TAG = "Oct_Settings";
+    private static final String TAG = "CR_Settings";
 
     private static String KEY_USE_ENGLISH_LOCALE = "use_english_locale";
 
@@ -195,9 +199,27 @@ public class SettingsActivity extends PreferenceActivity implements ButtonBarHan
     private static final String[] ENTRY_FRAGMENTS = {
         ButtonSettings.class.getName(),
         InterfaceSettings.class.getName(),
-        PowerMenuSettings.class.getName(),
+        KeyguardSettings.class.getName(),
+        MoreDeviceSettings.class.getName(),
+        PowerMenuFragment.class.getName(),
+        PowerMenuStyle.class.getName(),
         SbSettings.class.getName(),
-        QuickSettingsTiles.class.getName()
+        QuickSettingsTiles.class.getName(),
+        QuickSettingsTilesStyle.class.getName(),
+        CarrierLabel.class.getName(),
+        NotificationDrawerStyle.class.getName(),
+        NavbarTab.class.getName(),
+        NavBarButtonStyle.class.getName(),
+        NavbarStyleDimenSettings.class.getName(),
+        NavbarButtonFragment.class.getName(),
+        ButtonsListViewSettings.class.getName(),
+        LockscreenStyle.class.getName(),
+        PieButtonFragment.class.getName(),
+        PieButtonStyleSettings.class.getName(),
+        PieControl.class.getName(),
+        PieStyleSettings.class.getName(),
+        PieTriggerSettings.class.getName(),
+        PieTab.class.getName()
     };
 
     @Override

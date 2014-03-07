@@ -23,9 +23,10 @@ import static com.android.internal.util.cm.QSConstants.TILE_BATTERY;
 import static com.android.internal.util.cm.QSConstants.TILE_BLUETOOTH;
 import static com.android.internal.util.cm.QSConstants.TILE_BRIGHTNESS;
 import static com.android.internal.util.cm.QSConstants.TILE_CAMERA;
+import static com.android.internal.util.cm.QSConstants.TILE_OCT;
 import static com.android.internal.util.cm.QSConstants.TILE_DELIMITER;
-import static com.android.internal.util.cm.QSConstants.TILE_EXPANDEDDESKTOP;
 import static com.android.internal.util.cm.QSConstants.TILE_GPS;
+import static com.android.internal.util.cm.QSConstants.TILE_IMMERSIVE;
 import static com.android.internal.util.cm.QSConstants.TILE_LOCKSCREEN;
 import static com.android.internal.util.cm.QSConstants.TILE_LTE;
 import static com.android.internal.util.cm.QSConstants.TILE_MOBILEDATA;
@@ -37,6 +38,7 @@ import static com.android.internal.util.cm.QSConstants.TILE_PROFILE;
 import static com.android.internal.util.cm.QSConstants.TILE_PERFORMANCE_PROFILE;
 import static com.android.internal.util.cm.QSConstants.TILE_QUIETHOURS;
 import static com.android.internal.util.cm.QSConstants.TILE_RINGER;
+import static com.android.internal.util.cm.QSConstants.TILE_SCREENSHOT;
 import static com.android.internal.util.cm.QSConstants.TILE_SCREENTIMEOUT;
 import static com.android.internal.util.cm.QSConstants.TILE_SETTINGS;
 import static com.android.internal.util.cm.QSConstants.TILE_SLEEP;
@@ -46,6 +48,7 @@ import static com.android.internal.util.cm.QSConstants.TILE_USER;
 import static com.android.internal.util.cm.QSConstants.TILE_VOLUME;
 import static com.android.internal.util.cm.QSConstants.TILE_WIFI;
 import static com.android.internal.util.cm.QSConstants.TILE_WIFIAP;
+import static com.android.internal.util.cm.QSConstants.TILE_QUICKRECORD;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -89,8 +92,8 @@ public class QuickSettingsUtil {
                  TILE_CAMERA, R.string.title_tile_camera,
                 "com.android.systemui:drawable/ic_qs_camera"));
         registerTile(new QuickSettingsUtil.TileInfo(
-                TILE_EXPANDEDDESKTOP, R.string.title_tile_expanded_desktop,
-                "com.android.systemui:drawable/ic_qs_expanded_desktop_neutral"));
+                 TILE_OCT, R.string.title_tile_oct,
+                "com.android.systemui:drawable/ic_qs_oct"));
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_SLEEP, R.string.title_tile_sleep,
                 "com.android.systemui:drawable/ic_qs_sleep"));
@@ -146,9 +149,6 @@ public class QuickSettingsUtil {
                 TILE_VOLUME, R.string.title_tile_volume,
                 "com.android.systemui:drawable/ic_qs_volume"));
         registerTile(new QuickSettingsUtil.TileInfo(
-                TILE_MUSIC, R.string.title_tile_music,
-                "com.android.systemui:drawable/ic_qs_media_play"));
-        registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_WIFI, R.string.title_tile_wifi,
                 "com.android.systemui:drawable/ic_qs_wifi_full_4"));
         registerTile(new QuickSettingsUtil.TileInfo(
@@ -157,6 +157,18 @@ public class QuickSettingsUtil {
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_NETWORKADB, R.string.title_tile_network_adb,
                 "com.android.systemui:drawable/ic_qs_network_adb_off"));
+        registerTile(new QuickSettingsUtil.TileInfo(
+                TILE_IMMERSIVE, R.string.title_tile_immersive,
+                "com.android.systemui:drawable/ic_qs_immersive_on"));
+        registerTile(new QuickSettingsUtil.TileInfo(
+                TILE_MUSIC, R.string.title_tile_music,
+                "com.android.systemui:drawable/ic_qs_media_pause"));
+        registerTile(new QuickSettingsUtil.TileInfo(
+                TILE_SCREENSHOT, R.string.title_tile_screenshot,
+                "com.android.systemui:drawable/ic_qs_screenshot"));
+        registerTile(new QuickSettingsUtil.TileInfo(
+                TILE_QUICKRECORD, R.string.title_tile_quick_record,
+                "com.android.systemui:drawable/ic_qs_quickrecord"));
     }
 
     private static void registerTile(QuickSettingsUtil.TileInfo info) {
@@ -251,13 +263,6 @@ public class QuickSettingsUtil {
             enableTile(TILE_PROFILE);
         } else {
             disableTile(TILE_PROFILE);
-        }
-
-        // Don't show the Expanded desktop tile if expanded desktop is disabled
-        if (QSUtils.expandedDesktopEnabled(resolver)) {
-            enableTile(TILE_EXPANDEDDESKTOP);
-        } else {
-            disableTile(TILE_EXPANDEDDESKTOP);
         }
 
         // Don't show the Network ADB tile if adb debugging is disabled

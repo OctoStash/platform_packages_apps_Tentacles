@@ -1,7 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.oct.tentacles" >
+    package="com.oct.tentacles"
+    android:sharedUserId="android.uid.system" >
 
-    <uses-sdk android:minSdkVersion="18"/>
+    <uses-sdk android:minSdkVersion="19"/>
     <original-package android:name="com.oct.tentacles" />
 
     <uses-permission android:name="android.permission.REBOOT" />
@@ -50,8 +51,35 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".fragments.ls.KeyguardSettings"
+            android:label="@string/keyguard_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.oct.tentacles.SHORTCUT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".fragments.ui.InterfaceSettings"
             android:label="@string/user_interface" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.oct.tentacles.SHORTCUT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragments.navbar.NavbarTab"
+            android:label="@string/navbar_cat" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.oct.tentacles.SHORTCUT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragments.pie.PieTab"
+            android:label="@string/pie_control_title" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -64,7 +92,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="com.tentacles.oct.SHORTCUT" />
+                <category android:name="com.oct.tentacles.SHORTCUT" />
             </intent-filter>
         </activity>
         <activity
@@ -82,7 +110,7 @@
         </activity>
         <activity
  	    android:name=".CreateShortcut"
-             android:theme="@style/Theme.CreateShortCut" >
+            android:theme="@style/Theme.CreateShortCut" >
  	  <intent-filter>
                <action android:name="android.intent.action.CREATE_SHORTCUT" />
 
