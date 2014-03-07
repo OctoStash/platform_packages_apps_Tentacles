@@ -10,12 +10,6 @@
             android:fragment="com.oct.tentacles.fragments.ButtonSettings" />
 
         <header
-            android:key="@+id/interface_settings"
-            android:icon="@drawable/ic_tentacles_interface"
-            android:title="@string/user_interface"
-            android:fragment="com.oct.tentacles.fragments.ui.InterfaceSettings" />
-
-        <header
             android:id="@+id/power_menu_setings"
             android:title="@string/power_menu_title"
             android:icon="@drawable/ic_tentacles_power"
