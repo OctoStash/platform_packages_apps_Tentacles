@@ -94,8 +94,8 @@
     <string name="backlight_summary_enabled">Enabled</string>
 
     <string name="status_bar_title">Statusbar</string>
-    <string name="sb_notification_category">Notification Drawer</string>
-    <string name="sb_quicksettings_category">Quick Settings</string>
+    <string name="notification_category">Notification Drawer</string>
+    <string name="quicksettings_category">Quick Settings</string>
 
     <!-- Interface settings -->
     <string name="ui_recents_category">Recents Panel</string>
@@ -193,6 +193,18 @@
     <string name="title_quick_access">Show in drawer</string>
     <string name="title_quick_access_linked">Linked layout</string>
     <string name="summary_quick_access_linked">Use the same tiles and layout as the Quick Settings panel</string>
+    
+    <!-- Sound settings screen -->
+    <string name="ring_mode_title">Ring mode</string>
+    <string name="ring_mode_normal">Normal</string>
+    <string name="ring_mode_vibrate">Vibrate</string>
+    <string name="ring_mode_mute">Mute</string>
+    <string name="profile_reset_title">Reset</string>
+    <string name="profile_networkmode_2g">2G</string>
+    <string name="profile_networkmode_3g">3G</string>
+    <string name="profile_networkmode_2g3g">2G/3G</string>
+    <string name="connection_state_disabled">Disable</string>
+    <string name="connection_state_enabled">Enable</string>
 
     <!-- Power menu enable disable -->
     <string name="power_menu_title">Power menu</string>

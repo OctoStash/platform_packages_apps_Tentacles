@@ -66,7 +66,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.sb_quick_settings_panel);
+        addPreferencesFromResource(R.xml.quick_settings_panel);
     }
 
     @Override

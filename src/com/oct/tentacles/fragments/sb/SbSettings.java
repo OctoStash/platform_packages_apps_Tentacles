@@ -112,8 +112,8 @@ public class SbSettings extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.sb_quicksettings_category),
-                    getString(R.string.sb_notification_category)};
+                    getString(R.string.quicksettings_category),
+                    getString(R.string.notification_category)};
         return titleString;
     }
 }
