@@ -19,38 +19,23 @@
     android:title="@string/power_menu_title">
 
     <com.oct.tentacles.preference.SystemSettingCheckBoxPreference
-        android:key="power_menu_reboot_enabled"
+        android:key="power_menu_reboot"
         android:title="@string/power_menu_reboot_title"
-        android:defaultValue="true" />
+        android:defaultValue="false" />
 
     <com.oct.tentacles.preference.SystemSettingCheckBoxPreference
-        android:key="power_menu_screenshot_enabled"
+        android:key="power_menu_screenshot"
         android:title="@string/power_menu_screenshot_title"
         android:defaultValue="false" />
 
-    <!--com.oct.tentacles.preference.SystemSettingCheckBoxPreference
-        android:key="power_menu_immersive_enabled"
-        android:title="@string/power_menu_immersive"
-        android:defaultValue="false" /-->
-
     <com.oct.tentacles.preference.SystemSettingCheckBoxPreference
-        android:key="power_menu_profiles_enabled"
-        android:title="@string/power_menu_profiles_title"
-        android:defaultValue="true" />
-
-    <com.oct.tentacles.preference.SystemSettingCheckBoxPreference
-        android:key="power_menu_airplane_enabled"
+        android:key="power_menu_airplane"
         android:title="@string/power_menu_airplane_title"
         android:defaultValue="true" />
 
     <com.oct.tentacles.preference.SystemSettingCheckBoxPreference
-        android:key="power_menu_user_enabled"
-        android:title="@string/power_menu_user_title"
-        android:defaultValue="false" />
-
-    <com.oct.tentacles.preference.SystemSettingCheckBoxPreference
-        android:key="power_menu_silent_enabled"
-        android:title="@string/power_menu_sound_title"
+        android:key="power_menu_silent"
+        android:title="@string/power_menu_silent_title"
         android:defaultValue="true" />
 
 </PreferenceScreen>
