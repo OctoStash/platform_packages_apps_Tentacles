@@ -1,5 +1,6 @@
 /*
- * Copyright (C) 2012 The CyanogenMod project
+ * Copyright (C) 2014 Team OCtOS
+ * Warning: Tentacles may sting!
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.oct.tentacles.fragments.sb;
+package com.oct.tentacles.fragments.quicksettings;
 
 import android.os.Bundle;
 import android.preference.ListPreference;

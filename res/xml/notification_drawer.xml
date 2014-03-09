@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 The CyanogenMod Project
+<!-- Copyright (C) 2014 Team OctOS
+     Warning: Tentacles may sting!
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,7 +18,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/notification_drawer_title"
-    xmlns:settings="http://schemas.android.com/apk/res/com.oct.tentacles">
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <ListPreference
         android:key="notification_drawer_collapse_on_dismiss"
@@ -47,7 +48,7 @@
             android:title="@string/tile_picker_title"
             android:summary="@string/tile_picker_summary"
             android:dependency="qs_quick_access_linked"
-            android:fragment="com.oct.tentacles.fragments.sb.QuickSettingsTiles" >
+            android:fragment="org.oct.tentacles.quicksettings.QuickSettingsTiles" >
             <extra android:name="config_ribbon" android:value="true" />
         </PreferenceScreen>
     </PreferenceCategory>

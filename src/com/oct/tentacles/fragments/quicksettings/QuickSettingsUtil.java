@@ -1,5 +1,7 @@
 /*
- * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (c) 2011, Animoto Inc.
+ * Copyright (C) 2014 Team OctOS
+ * Warning: Tentacles may strangle!
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,38 +16,32 @@
  * limitations under the License.
  */
 
-package com.oct.tentacles.fragments.sb;
+package com.oct.tentacles.fragments.quicksettings;
 
-import static com.android.internal.util.cm.QSConstants.TILES_DEFAULT;
-import static com.android.internal.util.cm.QSConstants.TILE_AIRPLANE;
-import static com.android.internal.util.cm.QSConstants.TILE_AUTOROTATE;
-import static com.android.internal.util.cm.QSConstants.TILE_BATTERY;
-import static com.android.internal.util.cm.QSConstants.TILE_BLUETOOTH;
-import static com.android.internal.util.cm.QSConstants.TILE_BRIGHTNESS;
-import static com.android.internal.util.cm.QSConstants.TILE_CAMERA;
-import static com.android.internal.util.cm.QSConstants.TILE_DELIMITER;
-import static com.android.internal.util.cm.QSConstants.TILE_EXPANDEDDESKTOP;
-import static com.android.internal.util.cm.QSConstants.TILE_GPS;
-import static com.android.internal.util.cm.QSConstants.TILE_LOCKSCREEN;
-import static com.android.internal.util.cm.QSConstants.TILE_LTE;
-import static com.android.internal.util.cm.QSConstants.TILE_MOBILEDATA;
-import static com.android.internal.util.cm.QSConstants.TILE_MUSIC;
-import static com.android.internal.util.cm.QSConstants.TILE_NETWORKADB;
-import static com.android.internal.util.cm.QSConstants.TILE_NETWORKMODE;
-import static com.android.internal.util.cm.QSConstants.TILE_NFC;
-import static com.android.internal.util.cm.QSConstants.TILE_PROFILE;
-import static com.android.internal.util.cm.QSConstants.TILE_PERFORMANCE_PROFILE;
-import static com.android.internal.util.cm.QSConstants.TILE_QUIETHOURS;
-import static com.android.internal.util.cm.QSConstants.TILE_RINGER;
-import static com.android.internal.util.cm.QSConstants.TILE_SCREENTIMEOUT;
-import static com.android.internal.util.cm.QSConstants.TILE_SETTINGS;
-import static com.android.internal.util.cm.QSConstants.TILE_SLEEP;
-import static com.android.internal.util.cm.QSConstants.TILE_SYNC;
-import static com.android.internal.util.cm.QSConstants.TILE_TORCH;
-import static com.android.internal.util.cm.QSConstants.TILE_USER;
-import static com.android.internal.util.cm.QSConstants.TILE_VOLUME;
-import static com.android.internal.util.cm.QSConstants.TILE_WIFI;
-import static com.android.internal.util.cm.QSConstants.TILE_WIFIAP;
+import static com.android.internal.util.oct.QSConstants.TILES_DEFAULT;
+import static com.android.internal.util.oct.QSConstants.TILE_AIRPLANE;
+import static com.android.internal.util.oct.QSConstants.TILE_AUTOROTATE;
+import static com.android.internal.util.oct.QSConstants.TILE_BATTERY;
+import static com.android.internal.util.oct.QSConstants.TILE_BLUETOOTH;
+import static com.android.internal.util.oct.QSConstants.TILE_BRIGHTNESS;
+import static com.android.internal.util.oct.QSConstants.TILE_CAMERA;
+import static com.android.internal.util.oct.QSConstants.TILE_DELIMITER;
+import static com.android.internal.util.oct.QSConstants.TILE_GPS;
+import static com.android.internal.util.oct.QSConstants.TILE_LOCKSCREEN;
+import static com.android.internal.util.oct.QSConstants.TILE_LTE;
+import static com.android.internal.util.oct.QSConstants.TILE_MOBILEDATA;
+import static com.android.internal.util.oct.QSConstants.TILE_NETWORKMODE;
+import static com.android.internal.util.oct.QSConstants.TILE_NFC;
+import static com.android.internal.util.oct.QSConstants.TILE_RINGER;
+import static com.android.internal.util.oct.QSConstants.TILE_SCREENTIMEOUT;
+import static com.android.internal.util.oct.QSConstants.TILE_SETTINGS;
+import static com.android.internal.util.oct.QSConstants.TILE_SLEEP;
+import static com.android.internal.util.oct.QSConstants.TILE_SYNC;
+import static com.android.internal.util.oct.QSConstants.TILE_TORCH;
+import static com.android.internal.util.oct.QSConstants.TILE_USER;
+import static com.android.internal.util.oct.QSConstants.TILE_VOLUME;
+import static com.android.internal.util.oct.QSConstants.TILE_WIFI;
+import static com.android.internal.util.oct.QSConstants.TILE_WIFIAP;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -54,7 +50,7 @@ import android.text.TextUtils;
 import android.util.Log;
 
 import com.android.internal.telephony.Phone;
-import com.android.internal.util.cm.QSUtils;
+import com.android.internal.util.oct.QSUtils;
 import com.oct.tentacles.R;
 
 import java.util.ArrayList;
@@ -89,9 +85,6 @@ public class QuickSettingsUtil {
                  TILE_CAMERA, R.string.title_tile_camera,
                 "com.android.systemui:drawable/ic_qs_camera"));
         registerTile(new QuickSettingsUtil.TileInfo(
-                TILE_EXPANDEDDESKTOP, R.string.title_tile_expanded_desktop,
-                "com.android.systemui:drawable/ic_qs_expanded_desktop_neutral"));
-        registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_SLEEP, R.string.title_tile_sleep,
                 "com.android.systemui:drawable/ic_qs_sleep"));
         registerTile(new QuickSettingsUtil.TileInfo(
@@ -116,15 +109,6 @@ public class QuickSettingsUtil {
                 TILE_AUTOROTATE, R.string.title_tile_autorotate,
                 "com.android.systemui:drawable/ic_qs_auto_rotate"));
         registerTile(new QuickSettingsUtil.TileInfo(
-                TILE_PROFILE, R.string.title_tile_profile,
-                "com.android.systemui:drawable/ic_qs_profiles"));
-        registerTile(new QuickSettingsUtil.TileInfo(
-                TILE_PERFORMANCE_PROFILE, R.string.title_tile_performance_profile,
-                "com.android.systemui:drawable/ic_qs_perf_profile"));
-        registerTile(new QuickSettingsUtil.TileInfo(
-                TILE_QUIETHOURS, R.string.title_tile_quiet_hours,
-                "com.android.systemui:drawable/ic_qs_quiet_hours_on"));
-        registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_SCREENTIMEOUT, R.string.title_tile_screen_timeout,
                 "com.android.systemui:drawable/ic_qs_screen_timeout_on"));
         registerTile(new QuickSettingsUtil.TileInfo(
@@ -146,17 +130,11 @@ public class QuickSettingsUtil {
                 TILE_VOLUME, R.string.title_tile_volume,
                 "com.android.systemui:drawable/ic_qs_volume"));
         registerTile(new QuickSettingsUtil.TileInfo(
-                TILE_MUSIC, R.string.title_tile_music,
-                "com.android.systemui:drawable/ic_qs_media_play"));
-        registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_WIFI, R.string.title_tile_wifi,
                 "com.android.systemui:drawable/ic_qs_wifi_full_4"));
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_WIFIAP, R.string.title_tile_wifiap,
                 "com.android.systemui:drawable/ic_qs_wifi_ap_on"));
-        registerTile(new QuickSettingsUtil.TileInfo(
-                TILE_NETWORKADB, R.string.title_tile_network_adb,
-                "com.android.systemui:drawable/ic_qs_network_adb_off"));
     }
 
     private static void registerTile(QuickSettingsUtil.TileInfo info) {
@@ -213,11 +191,6 @@ public class QuickSettingsUtil {
         if (!QSUtils.deviceSupportsCamera()) {
             removeTile(TILE_CAMERA);
         }
-
-        // Don't show the performance profiles tile if is not available for the device
-        if (!QSUtils.deviceSupportsPerformanceProfiles(context)) {
-            removeTile(TILE_PERFORMANCE_PROFILE);
-        }
     }
 
     private static synchronized void refreshAvailableTiles(Context context) {
@@ -246,26 +219,6 @@ public class QuickSettingsUtil {
                 break;
         }
 
-        // Don't show the profiles tile if profiles are disabled
-        if (QSUtils.systemProfilesEnabled(resolver)) {
-            enableTile(TILE_PROFILE);
-        } else {
-            disableTile(TILE_PROFILE);
-        }
-
-        // Don't show the Expanded desktop tile if expanded desktop is disabled
-        if (QSUtils.expandedDesktopEnabled(resolver)) {
-            enableTile(TILE_EXPANDEDDESKTOP);
-        } else {
-            disableTile(TILE_EXPANDEDDESKTOP);
-        }
-
-        // Don't show the Network ADB tile if adb debugging is disabled
-        if (QSUtils.adbEnabled(resolver)) {
-            enableTile(TILE_NETWORKADB);
-        } else {
-            disableTile(TILE_NETWORKADB);
-        }
     }
 
     public static synchronized void updateAvailableTiles(Context context) {

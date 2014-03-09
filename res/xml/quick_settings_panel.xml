@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 The CyanogenMod Project
+<!-- Copyright (C) 2014 Team OctOS
+     Warning: Tentacles may strangle!
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -43,7 +44,7 @@
             android:key="tile_picker"
             android:title="@string/tile_picker_title"
             android:summary="@string/tile_picker_summary"
-            android:fragment="com.oct.tentacles.fragments.sb.QuickSettingsTiles" />
+            android:fragment="com.oct.tentacles.fragments.quicksettings.QuickSettingsTiles" />
 
         <MultiSelectListPreference
             android:key="pref_ring_mode"
@@ -88,13 +89,6 @@
             android:key="qs_dyanmic_bugreport"
             android:title="@string/title_dynamic_bugreport"
             android:defaultValue="true" />
-
-        <!-- 
-        <com.oct.tentacles.preference.SystemSettingCheckBoxPreference
-            android:key="qs_dyanmic_dock_battery"
-            android:title="@string/title_dynamic_dock_battery"
-            android:defaultValue="true" />
-        -->
 
         <com.oct.tentacles.preference.SystemSettingCheckBoxPreference
             android:key="qs_dyanmic_ime"

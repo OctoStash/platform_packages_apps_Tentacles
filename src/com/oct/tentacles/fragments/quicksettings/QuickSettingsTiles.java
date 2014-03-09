@@ -1,5 +1,7 @@
 /*
- * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (c) 2011, Animoto Inc.
+ * Copyright (C) 2014 Team OctOS
+ * Warning: Tentacles may strangle!
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.oct.tentacles.fragments.sb;
+package com.oct.tentacles.fragments.quicksettings;
 
 import android.app.AlertDialog;
 import android.app.Fragment;
@@ -39,10 +41,10 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.android.internal.util.cm.QSConstants;
+import com.android.internal.util.oct.QSConstants;
 import com.oct.tentacles.R;
 import com.oct.tentacles.Utils;
-import com.oct.tentacles.fragments.sb.QuickSettingsUtil.TileInfo;
+import com.oct.tentacles.fragments.quicksettings.QuickSettingsUtil.TileInfo;
 
 import java.text.Collator;
 import java.util.ArrayList;
@@ -131,7 +133,7 @@ public class QuickSettingsTiles extends Fragment {
                 addTile(tile.getTitleResId(), tile.getIcon(), 0, false);
             }
         }
-        addTile(R.string.add, null, R.drawable.ic_menu_add, false);
+        addTile(R.string.profiles_add, null, R.drawable.ic_menu_add, false);
     }
 
     /**
@@ -230,17 +232,9 @@ public class QuickSettingsTiles extends Fragment {
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
-        if (Utils.isPhone(getActivity())) {
-            mContainer.setPadding(20, 0, 20, 0);
-        }
-    }
-
-    @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
 
-        menu.add(0, MENU_RESET, 0, R.string.reset)
+        menu.add(0, MENU_RESET, 0, R.string.profile_reset_title)
                 .setIcon(R.drawable.ic_action_backup) // use the backup icon
                 .setAlphabeticShortcut('r')
                 .setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM |

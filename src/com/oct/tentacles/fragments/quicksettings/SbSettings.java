@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.oct.tentacles.fragments.sb;
+package com.oct.tentacles.fragments.quicksettings;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -35,7 +35,7 @@ import com.oct.tentacles.R;
 import com.oct.tentacles.preference.SettingsPreferenceFragment;
 import com.oct.tentacles.Utils;
 
-import com.oct.tentacles.fragments.sb.*;
+import com.oct.tentacles.fragments.quicksettings.*;
 
 import java.lang.Exception;
 import java.util.ArrayList;

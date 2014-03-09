@@ -38,7 +38,7 @@ import android.widget.TextView;
 
 // fragments import for entry
 import com.oct.tentacles.fragments.*;
-import com.oct.tentacles.fragments.sb.*;
+import com.oct.tentacles.fragments.quicksettings.*;
 
 public class SettingsActivity extends PreferenceActivity implements ButtonBarHandler {
 

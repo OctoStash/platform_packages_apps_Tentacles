@@ -1,6 +1,7 @@
 /*
  * Copyright (c) 2011, Animoto Inc.
- * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (C) 2014 Team OctOS
+ * Warning: Tentacles may strangle!
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.oct.tentacles.fragments.sb;
+package com.oct.tentacles.fragments.quicksettings;
 
 import java.util.Collections;
 import java.util.ArrayList;
@@ -270,10 +271,10 @@ public class DraggableGridView extends ViewGroup implements
 
     void toggleAddDelete(boolean delete) {
         int resid = R.drawable.ic_menu_add;
-        int stringid = R.string.add;
+        int stringid = R.string.profiles_add;
         if (delete) {
             resid = R.drawable.ic_menu_delete_holo_dark;
-            stringid = R.string.delete;
+            stringid = R.string.dialog_delete_title;
         }
         TextView addDeleteTile = ((TextView) getChildAt(getChildCount() - 1).findViewById(R.id.tile_textview));
         addDeleteTile.setCompoundDrawablesRelativeWithIntrinsicBounds(0, resid, 0, 0);

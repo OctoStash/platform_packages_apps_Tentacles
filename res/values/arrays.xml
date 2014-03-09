@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
-    <string-array name="entries_network_widget" translatable="false">
+        <string-array name="entries_network_widget" translatable="false">
         <item>2G | 2G+3G</item>
         <item>2G | 3G</item>
         <item>2G | 3G | 2G+3G</item>
@@ -46,10 +45,9 @@
 
     <string-array name="quick_pulldown_values" translatable="false">
         <item>0</item>
-       <item>1</item>
+        <item>1</item>
         <item>2</item>
     </string-array>
-
     <!-- Status bar auto-collapse behaviour -->
     <string-array name="notification_drawer_collapse_on_dismiss_entries" translatable="false">
         <item>@string/collapse_on_dismiss_never</item>

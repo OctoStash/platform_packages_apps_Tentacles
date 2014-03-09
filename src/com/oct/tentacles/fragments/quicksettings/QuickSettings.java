@@ -1,5 +1,7 @@
 /*
- * Copyright (C) 2011 The CyanogenMod Project
+ * Copyright (c) 2011, Animoto Inc.
+ * Copyright (C) 2014 Team OctOS
+ * Warning: Tentacles may strangle!
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.oct.tentacles.fragments.sb;
+package com.oct.tentacles.fragments.quicksettings;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -36,8 +38,8 @@ import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.text.TextUtils;
 
-import com.android.internal.util.cm.QSConstants;
-import com.android.internal.util.cm.QSUtils;
+import com.android.internal.util.oct.QSConstants;
+import com.android.internal.util.oct.QSUtils;
 import com.oct.tentacles.R;
 import com.oct.tentacles.preference.SettingsPreferenceFragment;
 import com.oct.tentacles.Utils;
@@ -80,17 +82,6 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         mDynamicTiles = (PreferenceCategory) prefSet.findPreference(DYNAMIC_TILES);
         mQuickPulldown = (ListPreference) prefSet.findPreference(QUICK_PULLDOWN);
 
-        if (!Utils.isPhone(getActivity())) {
-            if (mQuickPulldown != null) {
-                mGeneralSettings.removePreference(mQuickPulldown);
-            }
-        } else {
-            mQuickPulldown.setOnPreferenceChangeListener(this);
-            int quickPulldownValue = Settings.System.getInt(resolver,
-                    Settings.System.QS_QUICK_PULLDOWN, 0);
-            mQuickPulldown.setValue(String.valueOf(quickPulldownValue));
-            updatePulldownSummary(quickPulldownValue);
-        }
 
         // Add the sound mode
         mRingMode = (MultiSelectListPreference) prefSet.findPreference(EXP_RING_MODE);
