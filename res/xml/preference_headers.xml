@@ -30,7 +30,7 @@
 
         <header
             android:id="@+id/statusbar_settings"
-            android:title="@string/quick_settings_panel_title"
+            android:title="@string/quicksettings_category"
             android:icon="@drawable/ic_tentacles_sb"
             android:fragment="com.oct.tentacles.fragments.quicksettings.SbSettings" />
 
