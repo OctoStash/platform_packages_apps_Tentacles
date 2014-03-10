@@ -60,6 +60,11 @@
             android:title="@string/battery_around_lockscreen_ring" />
 
     <CheckBoxPreference
+            android:key="lock_before_unlock"
+            android:title="@string/lock_before_unlock_title"
+            android:summary="@string/lock_before_unlock_summary" />
+
+    <CheckBoxPreference
             android:key="lockscreen_eight_targets"
             android:title="@string/lockscreen_eight_targets_title"
             android:summary="@string/lockscreen_eight_targets_summary" />
