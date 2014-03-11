@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.oct.tentacles.fibers.fragments.ui;
+package com.oct.tentacles.fragments.ui;
 
 import android.app.ActionBar;
 import android.app.Activity;

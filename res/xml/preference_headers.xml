@@ -2,7 +2,6 @@
 
     <header
         android:id="@+id/about_octos"
-        android:icon="@drawable/ic_tentacles_about"
         android:title="@string/about_octos_title" >
         <intent
             android:action="android.intent.action.MAIN"
