@@ -59,7 +59,7 @@
     <string name="ics_color">Holo</string>
 
     <!-- Quick settings panel  -->
-    <string name="quicksettings_category">Statusbar</string>
+    <string name="sb_quicksettings_category">Statusbar</string>
     <string name="quick_settings_panel_title">Quick Settings</string>
     <string name="title_static_tiles">Static tiles</string>
     <string name="tile_picker_title">Tiles and layout</string>
@@ -129,7 +129,7 @@
     <string name="tiles_reset_message">Restore the default displayed tiles and layout?</string>
 
     <!-- Ribbons -->
-    <string name="notification_category">Notification Drawer</string>
+    <string name="sb_notification_category">Notification Drawer</string>
     <string name="notification_drawer_title">Notification drawer</string>
     <string name="notification_drawer_collapse_on_dismiss_title">Auto close behavior</string>
     <string name="collapse_on_dismiss_never">Disabled</string>

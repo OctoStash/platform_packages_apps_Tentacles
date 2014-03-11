@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.oct.tentacles.fragments.quicksettings;
+package com.oct.tentacles.fragments.sb;
 
 import static com.android.internal.util.oct.QSConstants.TILES_DEFAULT;
 import static com.android.internal.util.oct.QSConstants.TILE_AIRPLANE;

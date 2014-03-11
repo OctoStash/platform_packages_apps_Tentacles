@@ -51,7 +51,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".fragments.quicksettings.SbSettings"
+            android:name=".fragments.sb.SbSettings"
             android:label="@string/quick_settings_panel_title" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

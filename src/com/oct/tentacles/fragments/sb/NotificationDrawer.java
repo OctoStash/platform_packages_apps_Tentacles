@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.oct.tentacles.fragments.quicksettings;
+package com.oct.tentacles.fragments.sb;
 
 import android.os.Bundle;
 import android.preference.ListPreference;
@@ -38,7 +38,7 @@ public class NotificationDrawer extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.notification_drawer);
+        addPreferencesFromResource(R.xml.sb_notification_drawer);
         PreferenceScreen prefScreen = getPreferenceScreen();
 
         // Notification drawer

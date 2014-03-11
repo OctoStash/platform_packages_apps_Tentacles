@@ -36,8 +36,8 @@
 
         <header
             android:id="@+id/statusbar_settings"
-            android:title="@string/quicksettings_category"
+            android:title="@string/sb_quicksettings_category"
             android:icon="@drawable/ic_tentacles_sb"
-            android:fragment="com.oct.tentacles.fragments.quicksettings.SbSettings" />
+            android:fragment="com.oct.tentacles.fragments.sb.SbSettings" />
 
 </preference-headers>

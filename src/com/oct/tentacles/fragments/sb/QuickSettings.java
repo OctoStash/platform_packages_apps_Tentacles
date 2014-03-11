@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.oct.tentacles.fragments.quicksettings;
+package com.oct.tentacles.fragments.sb;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -68,7 +68,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.quick_settings_panel);
+        addPreferencesFromResource(R.xml.sb_quick_settings_panel);
     }
 
     @Override

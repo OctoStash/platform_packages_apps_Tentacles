@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.oct.tentacles.fragments.quicksettings;
+package com.oct.tentacles.fragments.sb;
 
 import android.app.AlertDialog;
 import android.app.Fragment;
@@ -44,7 +44,7 @@ import android.widget.TextView;
 import com.android.internal.util.oct.QSConstants;
 import com.oct.tentacles.R;
 import com.oct.tentacles.Utils;
-import com.oct.tentacles.fragments.quicksettings.QuickSettingsUtil.TileInfo;
+import com.oct.tentacles.fragments.sb.QuickSettingsUtil.TileInfo;
 
 import java.text.Collator;
 import java.util.ArrayList;

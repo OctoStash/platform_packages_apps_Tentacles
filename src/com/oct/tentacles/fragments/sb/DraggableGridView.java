@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.oct.tentacles.fragments.quicksettings;
+package com.oct.tentacles.fragments.sb;
 
 import java.util.Collections;
 import java.util.ArrayList;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.oct.tentacles.fragments.quicksettings;
+package com.oct.tentacles.fragments.sb;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -35,7 +35,7 @@ import com.oct.tentacles.R;
 import com.oct.tentacles.preference.SettingsPreferenceFragment;
 import com.oct.tentacles.Utils;
 
-import com.oct.tentacles.fragments.quicksettings.*;
+import com.oct.tentacles.fragments.sb.*;
 
 import java.lang.Exception;
 import java.util.ArrayList;
@@ -112,8 +112,8 @@ public class SbSettings extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.quicksettings_category),
-                    getString(R.string.notification_category)};
+                    getString(R.string.sb_quicksettings_category),
+                    getString(R.string.sb_notification_category)};
         return titleString;
     }
 }
