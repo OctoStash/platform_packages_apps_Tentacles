@@ -149,6 +149,25 @@ public class SettingsActivity extends PreferenceActivity implements ButtonBarHan
         return true;
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        AdapterContextMenuInfo info = (AdapterContextMenuInfo) item.getMenuInfo();
+        switch (item.getItemId()) {
+            case R.id.change_locale:
+                Log.e(TAG, "change_locale clicked");
+                SharedPreferences p = getPreferences(MODE_PRIVATE);
+                boolean useEnglishLocale = p.getBoolean(KEY_USE_ENGLISH_LOCALE, false);
+                p.edit().putBoolean(KEY_USE_ENGLISH_LOCALE, !useEnglishLocale).apply();
+                recreate();
+                return true;
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+            default:
+                return super.onContextItemSelected(item);
+        }
+    }
+
     private void setLocale() {
         SharedPreferences p = getPreferences(MODE_PRIVATE);
         boolean useEnglishLocale = p.getBoolean(KEY_USE_ENGLISH_LOCALE, false);
