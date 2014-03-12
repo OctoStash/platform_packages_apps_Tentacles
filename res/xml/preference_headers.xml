@@ -36,6 +36,12 @@
             android:fragment="com.oct.tentacles.fragments.ui.InterfaceSettings" />
 
         <header
+            android:key="@+id/keyguard_settings"
+            android:icon="@drawable/ic_tentacles_keyguard"
+            android:title="@string/keyguard_title"
+            android:fragment="com.oct.tentacles.fragments.ls.KeyguardSettings" />
+
+        <header
             android:id="@+id/statusbar_settings"
             android:title="@string/sb_quicksettings_category"
             android:icon="@drawable/ic_tentacles_sb"
