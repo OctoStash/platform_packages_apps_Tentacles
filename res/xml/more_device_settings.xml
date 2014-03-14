@@ -19,14 +19,14 @@
     android:title="@string/more_device_settings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <!-- Advanced device settings -->
-    <!--Preference
+    <!--Advanced device settings -->
+    <Preference
         android:key="advanced_device_settings">
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetPackage="com.oct.device"
-            android:targetClass="com.oct.device.DeviceSettings" />
-    </Preference-->
+            android:targetPackage="com.cyanogenmod.device"
+            android:targetClass="com.cyanogenmod.device.DeviceSettings" />
+    </Preference>
 
     <PreferenceCategory
         android:key="display_calibration_category"
