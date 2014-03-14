@@ -39,6 +39,7 @@ import android.widget.TextView;
 // fragments import for entry
 import com.oct.tentacles.fragments.*;
 import com.oct.tentacles.fragments.ls.*;
+import com.oct.tentacles.fragments.navbar.*;
 import com.oct.tentacles.fragments.sb.*;
 import com.oct.tentacles.fragments.ui.*;
 
@@ -199,7 +200,8 @@ public class SettingsActivity extends PreferenceActivity implements ButtonBarHan
 		KeyguardSettings.class.getName(),
 		MoreDeviceSettings.class.getName(),
         SbSettings.class.getName(),
-        QuickSettingsTiles.class.getName()
+        QuickSettingsTiles.class.getName(),       
+        NavbarTab.class.getName(),
     };
 
     @Override

@@ -22,19 +22,7 @@
 	            android:targetPackage="com.tmobile.themechooser"
 	            android:targetClass="com.tmobile.themechooser.ThemeChooser" />
 	    </header>
-
-        <header
-            android:id="@+id/power_menu_setings"
-            android:title="@string/power_menu_title"
-            android:icon="@drawable/ic_tentacles_power"
-            android:fragment="com.oct.tentacles.fragments.PowerMenuSettings" />
-            
-        <header
-            android:id="@+id/more_device_settings"
-            android:title="@string/more_device_controls_title"
-            android:icon="@drawable/ic_tentacles_device"
-            android:fragment="com.oct.tentacles.fragments.MoreDeviceSettings" />
-            
+	    
         <header
             android:key="@+id/interface_settings"
             android:icon="@drawable/ic_tentacles_interface"
@@ -46,6 +34,24 @@
             android:icon="@drawable/ic_tentacles_keyguard"
             android:title="@string/keyguard_title"
             android:fragment="com.oct.tentacles.fragments.ls.KeyguardSettings" />
+            
+        <header
+            android:id="@+id/navbar_settings"
+            android:icon="@drawable/ic_settings_navigation"
+            android:title="@string/navbar_cat"
+            android:fragment="com.oct.tentacles.fragments.navbar.NavbarTab" />
+
+        <header
+            android:id="@+id/more_device_settings"
+            android:title="@string/more_device_controls_title"
+            android:icon="@drawable/ic_tentacles_device"
+            android:fragment="com.oct.tentacles.fragments.MoreDeviceSettings" />
+            
+        <header
+            android:id="@+id/power_menu_setings"
+            android:title="@string/power_menu_title"
+            android:icon="@drawable/ic_tentacles_power"
+            android:fragment="com.oct.tentacles.fragments.PowerMenuSettings" />
 
         <header
             android:id="@+id/statusbar_settings"

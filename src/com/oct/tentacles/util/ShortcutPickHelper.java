@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.oct.tentacles.fragments.ls;
+package com.oct.tentacles.util;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -41,7 +41,7 @@ import android.widget.ExpandableListView;
 import android.widget.TextView;
 
 import com.oct.tentacles.R;
-import com.oct.tentacles.fragments.ls.ShortcutPickHelper.AppExpandableAdapter.GroupInfo;
+import com.oct.tentacles.util.ShortcutPickHelper.AppExpandableAdapter.GroupInfo;
 
 public class ShortcutPickHelper {
 

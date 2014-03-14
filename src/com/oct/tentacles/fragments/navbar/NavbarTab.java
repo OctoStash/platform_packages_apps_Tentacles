@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2013 Carbon Development
+ * Copyright (C) 2012-2013 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.oct.tentacles.fragments.ls;
+package com.oct.tentacles.fragments.navbar;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -35,14 +35,14 @@ import com.oct.tentacles.R;
 import com.oct.tentacles.preference.SettingsPreferenceFragment;
 import com.oct.tentacles.Utils;
 
-import com.oct.tentacles.fragments.ls.*;
+import com.oct.tentacles.fragments.navbar.*;
 
 import java.lang.Exception;
 import java.util.ArrayList;
 
-public class KeyguardSettings extends SettingsPreferenceFragment {
+public class NavbarTab extends SettingsPreferenceFragment {
 
-    private static final String TAG = "Keyguard_Category";
+    private static final String TAG = "NavigationBar_Category";
 
     PagerTabStrip mPagerTabStrip;
     ViewPager mViewPager;
@@ -62,8 +62,8 @@ public class KeyguardSettings extends SettingsPreferenceFragment {
         mViewPager = (ViewPager) view.findViewById(R.id.viewPager);
         mPagerTabStrip = (PagerTabStrip) view.findViewById(R.id.pagerTabStrip);
 
-        StatusBarAdapter StatusBarAdapter = new StatusBarAdapter(getFragmentManager());
-        mViewPager.setAdapter(StatusBarAdapter);
+        NavigationAdapter NavigationAdapter = new NavigationAdapter(getFragmentManager());
+        mViewPager.setAdapter(NavigationAdapter);
 
         return view;
     }
@@ -83,14 +83,14 @@ public class KeyguardSettings extends SettingsPreferenceFragment {
         }
     }
 
-    class StatusBarAdapter extends FragmentPagerAdapter {
+    class NavigationAdapter extends FragmentPagerAdapter {
         String titles[] = getTitles();
         private Fragment frags[] = new Fragment[titles.length];
 
-        public StatusBarAdapter(FragmentManager fm) {
+        public NavigationAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new ActiveDisplaySettings();
-			frags[1] = new LockscreenTargets();
+            frags[0] = new NavbarSettings();
+            frags[1] = new NavRing();
         }
 
         @Override
@@ -112,8 +112,8 @@ public class KeyguardSettings extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.ls_activedisplay_category),
-					getString(R.string.ls_targets_category)};
+                    getString(R.string.navigation_bar_general_category),
+                    getString(R.string.ls_navring_category)};
         return titleString;
     }
 }

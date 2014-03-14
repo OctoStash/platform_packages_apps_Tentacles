@@ -46,8 +46,9 @@ import com.android.internal.util.cm.LockscreenTargetUtils;
 import com.android.internal.widget.multiwaveview.GlowPadView;
 import com.android.internal.widget.multiwaveview.TargetDrawable;
 import com.oct.tentacles.R;
-import com.oct.tentacles.fragments.ls.IconPicker.*;
-import com.oct.tentacles.fragments.ls.ShortcutPickHelper.*;
+import com.oct.tentacles.util.IconPicker;
+import com.oct.tentacles.util.IconPicker.OnIconPickListener;
+import com.oct.tentacles.util.ShortcutPickHelper;
 
 import java.io.File;
 import java.io.IOException;
@@ -55,7 +56,9 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 
 public class LockscreenTargets extends Fragment implements
-        ShortcutPickHelper.OnPickListener, GlowPadView.OnTriggerListener, OnIconPickListener {
+        ShortcutPickHelper.OnPickListener, 
+        GlowPadView.OnTriggerListener, OnIconPickListener {
+        
     private static final String TAG = "LockscreenTargets";
 
     private Activity mActivity;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.oct.tentacles.fragments.ls;
+package com.oct.tentacles.util;
 
 import android.app.Activity;
 import android.app.AlertDialog;

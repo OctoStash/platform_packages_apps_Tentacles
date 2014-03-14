@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.oct.tentacles.fragments.ls;
+package com.oct.tentacles.fragments.navbar;
 
 import android.app.AlertDialog;
 import android.app.Fragment;
@@ -41,7 +41,7 @@ import static com.android.internal.util.cm.NavigationRingConstants.*;
 import com.android.internal.util.cm.NavigationRingHelpers;
 import com.android.internal.widget.multiwaveview.GlowPadView;
 import com.android.internal.widget.multiwaveview.TargetDrawable;
-import com.oct.tentacles.fragments.ls.ShortcutPickHelper.*;
+import com.oct.tentacles.util.ShortcutPickHelper;
 import com.oct.tentacles.R;
 import com.oct.tentacles.Utils;
 
