@@ -406,4 +406,7 @@
     <string name="navigation_bar_height_20">20dp</string>
     <string name="navigation_bar_height_0">0dp (hide)</string>
  
+    <!-- Superuser -->
+    <string name="supersu_title">SuperSU</string>
+ 
 </resources>
