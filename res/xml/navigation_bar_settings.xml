@@ -6,7 +6,7 @@
 
     <PreferenceScreen
         android:key="navigation_bar"
-        android:fragment="com.oct.tentacles.fragments.navbar.NavBar"
+        android:fragment="com.oct.tentacles.fragments.navbar.NavbarSettings"
         android:title="@string/navigation_button_title" />
 	
 	<ListPreference

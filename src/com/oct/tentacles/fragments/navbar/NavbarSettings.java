@@ -14,8 +14,6 @@ import com.oct.tentacles.preference.SettingsPreferenceFragment;
 public class NavbarSettings extends SettingsPreferenceFragment implements
 OnPreferenceChangeListener {
 
-    private static final String TAG = "NavbarSettings";
-
     private static final String KEY_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
 
     private ListPreference mNavigationBarHeight;
@@ -42,7 +40,8 @@ OnPreferenceChangeListener {
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.NAVIGATION_BAR_HEIGHT, statusNavigationBarHeight);
             mNavigationBarHeight.setSummary(mNavigationBarHeight.getEntries()[index]);
+            return true;
         }
-        return true;
+        return false;
     }
 }
