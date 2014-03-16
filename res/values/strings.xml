@@ -411,5 +411,8 @@
     
     <!-- Tentacles tile -->
     <string name="title_tile_tentacles">Tentacles</string>
+    
+    <!-- Lockscreen battery ring -->
+    <string name="battery_around_lockscreen_ring">Battery around unlock ring</string>
  
 </resources>
