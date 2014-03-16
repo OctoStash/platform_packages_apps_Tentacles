@@ -26,8 +26,8 @@ import static com.android.internal.util.oct.QSConstants.TILE_BLUETOOTH;
 import static com.android.internal.util.oct.QSConstants.TILE_BRIGHTNESS;
 import static com.android.internal.util.oct.QSConstants.TILE_CAMERA;
 import static com.android.internal.util.oct.QSConstants.TILE_DELIMITER;
+import static com.android.internal.util.oct.QSConstants.TILE_EXP_DESKTOP;
 import static com.android.internal.util.oct.QSConstants.TILE_GPS;
-import static com.android.internal.util.oct.QSConstants.TILE_IMMERSIVE;
 import static com.android.internal.util.oct.QSConstants.TILE_LOCKSCREEN;
 import static com.android.internal.util.oct.QSConstants.TILE_LTE;
 import static com.android.internal.util.oct.QSConstants.TILE_MOBILEDATA;
@@ -44,7 +44,6 @@ import static com.android.internal.util.oct.QSConstants.TILE_USER;
 import static com.android.internal.util.oct.QSConstants.TILE_VOLUME;
 import static com.android.internal.util.oct.QSConstants.TILE_WIFI;
 import static com.android.internal.util.oct.QSConstants.TILE_WIFIAP;
-
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -142,8 +141,8 @@ public class QuickSettingsUtil {
                 TILE_WIFIAP, R.string.title_tile_wifiap,
                 "com.android.systemui:drawable/ic_qs_wifi_ap_on"));
         registerTile(new QuickSettingsUtil.TileInfo(
-                TILE_IMMERSIVE, R.string.title_tile_immersive,
-                "com.android.systemui:drawable/ic_qs_immersive_off"));
+                TILE_EXP_DESKTOP, R.string.title_tile_exp_desktop,
+                "com.android.systemui:drawable/ic_qs_exp_desktop_on"));
     }
 
     private static void registerTile(QuickSettingsUtil.TileInfo info) {
