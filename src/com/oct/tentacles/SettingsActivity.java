@@ -200,8 +200,10 @@ public class SettingsActivity extends PreferenceActivity implements ButtonBarHan
 		KeyguardSettings.class.getName(),
 		MoreDeviceSettings.class.getName(),
         SbSettings.class.getName(),
-        QuickSettingsTiles.class.getName(),       
-        NavbarTab.class.getName(),
+        QuickSettingsTiles.class.getName(),
+        QuickPulldownSettings.class.getName(),
+        NavbarTab.class.getName(),       
+        NavbarSettings.class.getName(),
     };
 
     @Override

@@ -1,6 +1,7 @@
 
 package com.oct.tentacles.fragments.navbar;
 
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
