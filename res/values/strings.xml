@@ -408,5 +408,8 @@
  
     <!-- Superuser -->
     <string name="supersu_title">SuperSU</string>
+    
+    <!-- Tentacles tile -->
+    <string name="title_tile_tentacles">Tentacles</string>
  
 </resources>
