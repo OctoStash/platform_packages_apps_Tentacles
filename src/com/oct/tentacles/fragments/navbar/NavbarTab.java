@@ -89,7 +89,7 @@ public class NavbarTab extends SettingsPreferenceFragment {
 
         public NavigationAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new NavRing();
+
         }
 
         @Override
@@ -110,8 +110,7 @@ public class NavbarTab extends SettingsPreferenceFragment {
 
     private String[] getTitles() {
         String titleString[];
-        titleString = new String[]{
-                    getString(R.string.ls_navring_category)};
+
         return titleString;
     }
 }
