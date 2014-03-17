@@ -36,12 +36,6 @@
             android:fragment="com.oct.tentacles.fragments.ls.KeyguardSettings" />
             
         <header
-            android:key="@+id/lockscreen_notifcation_settings"
-            android:icon="@drawable/ic_settings_locknotification"
-            android:title="@string/lockscreen_notifications"
-            android:fragment="com.oct.tentacles.fragments.ls.LockscreenNotifications" />
-            
-        <header
             android:id="@+id/navbar_settings"
             android:icon="@drawable/ic_settings_navigation"
             android:title="@string/navbar_cat"

@@ -421,6 +421,7 @@
     <string name="layout">Layout</string>
     <string name="privacy">Privacy</string>
 
+    <string name="ls_notifications_category">Lockscreen notifications</string>
     <string name="lockscreen_notifications">Lockscreen notifications</string>
     <string name="lockscreen_notifications_summary">Show pending notifications on lockscreen</string>
     <string name="pocket_mode">Pocket mode</string>

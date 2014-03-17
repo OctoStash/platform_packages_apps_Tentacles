@@ -61,6 +61,11 @@
         android:title="@string/privacy" >
 
         <CheckBoxPreference
+            android:key="privacy_mode"
+            android:title="@string/privacy_mode"
+            android:summary="@string/privacy_mode_summary" />
+
+        <CheckBoxPreference
             android:key="expanded_view"
             android:title="@string/expanded_view"
             android:summary="@string/expanded_view_summary" />
