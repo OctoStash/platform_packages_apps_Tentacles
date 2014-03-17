@@ -41,9 +41,9 @@ import android.widget.ExpandableListView;
 import android.widget.TextView;
 
 import com.oct.tentacles.R;
-import com.oct.tentacles.util.ShortcutPickHelper.AppExpandableAdapter.GroupInfo;
+import com.oct.tentacles.util.ShortcutPickerHelper.AppExpandableAdapter.GroupInfo;
 
-public class ShortcutPickHelper {
+public class ShortcutPickerHelper {
 
     private Activity mParent;
     private AlertDialog mAlertDialog;
@@ -58,7 +58,7 @@ public class ShortcutPickHelper {
         void shortcutPicked(String uri, String friendlyName, boolean isApplication);
     }
 
-    public ShortcutPickHelper(Activity parent, OnPickListener listener) {
+    public ShortcutPickerHelper(Activity parent, OnPickListener listener) {
         mParent = parent;
         mPackageManager = mParent.getPackageManager();
         mListener = listener;
@@ -89,7 +89,7 @@ public class ShortcutPickHelper {
                 shortcutNames.add(s);
             }
         }
-        shortcutNames.add(mParent.getString(R.string.profile_applist_title));
+        shortcutNames.add(mParent.getString(R.string.apps));
         shortcutNames.add(mParent.getString(R.string.picker_activities));
         bundle.putStringArrayList(Intent.EXTRA_SHORTCUT_NAME, shortcutNames);
 
@@ -124,7 +124,7 @@ public class ShortcutPickHelper {
 
     private void processShortcut(final Intent intent, int requestCodeApplication, int requestCodeShortcut) {
         // Handle case where user selected "Applications"
-        String applicationName = mParent.getString(R.string.profile_applist_title);
+        String applicationName = mParent.getString(R.string.apps);
         String application2name = mParent.getString(R.string.picker_activities);
         String shortcutName = intent.getStringExtra(Intent.EXTRA_SHORTCUT_NAME);
         if (applicationName != null && applicationName.equals(shortcutName)) {

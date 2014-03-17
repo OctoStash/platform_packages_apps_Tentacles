@@ -15,7 +15,7 @@
         <attr name="unitsLeft" format="string|reference" />
         <attr name="unitsRight" format="string|reference" />
     </declare-styleable>
-
+	
     <declare-styleable name="DragSortListView">
         <attr name="collapsedHeight" format="dimension" />
         <attr name="dragScrollStart" format="float" />

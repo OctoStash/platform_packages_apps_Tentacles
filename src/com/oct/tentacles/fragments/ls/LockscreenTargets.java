@@ -48,7 +48,7 @@ import com.android.internal.widget.multiwaveview.TargetDrawable;
 import com.oct.tentacles.R;
 import com.oct.tentacles.util.IconPicker;
 import com.oct.tentacles.util.IconPicker.OnIconPickListener;
-import com.oct.tentacles.util.ShortcutPickHelper;
+import com.oct.tentacles.util.ShortcutPickerHelper;
 
 import java.io.File;
 import java.io.IOException;
@@ -56,14 +56,12 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 
 public class LockscreenTargets extends Fragment implements
-        ShortcutPickHelper.OnPickListener, 
-        GlowPadView.OnTriggerListener, OnIconPickListener {
-        
+        ShortcutPickerHelper.OnPickListener, GlowPadView.OnTriggerListener, OnIconPickListener {
     private static final String TAG = "LockscreenTargets";
 
     private Activity mActivity;
     private Resources mResources;
-    private ShortcutPickHelper mPicker;
+    private ShortcutPickerHelper mPicker;
     private IconPicker mIconPicker;
 
     private GlowPadView mWaveView;
@@ -106,7 +104,7 @@ public class LockscreenTargets extends Fragment implements
         mMaxTargets = LockscreenTargetUtils.getMaxTargets(mActivity);
 
         mIconPicker = new IconPicker(mActivity, this);
-        mPicker = new ShortcutPickHelper(mActivity, this);
+        mPicker = new ShortcutPickerHelper(mActivity, this);
 
         mTemporaryImage = new File(mActivity.getCacheDir() + "/target.tmp");
         mEmptyLabel = mResources.getString(R.string.lockscreen_target_empty);
@@ -139,7 +137,7 @@ public class LockscreenTargets extends Fragment implements
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         menu.add(0, MENU_RESET, 0, R.string.reset)
-            .setIcon(R.drawable.ic_settings_backup) // use the backup icon
+            .setIcon(R.drawable.ic_action_backup) // use the backup icon
             .setAlphabeticShortcut('r')
             .setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM |
                 MenuItem.SHOW_AS_ACTION_WITH_TEXT);
@@ -424,6 +422,10 @@ public class LockscreenTargets extends Fragment implements
 
     @Override
     public void onReleased(View v, int handle) {
+    }
+
+    @Override
+    public void onTargetChange(View v, int target) {
     }
 
     @Override

@@ -37,6 +37,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 // fragments import for entry
+import com.oct.tentacles.dslv.*;
 import com.oct.tentacles.fragments.*;
 import com.oct.tentacles.fragments.ls.*;
 import com.oct.tentacles.fragments.navbar.*;
@@ -203,8 +204,12 @@ public class SettingsActivity extends PreferenceActivity implements ButtonBarHan
         SbSettings.class.getName(),
         QuickSettingsTiles.class.getName(),
         QuickPulldownSettings.class.getName(),
-        NavbarTab.class.getName(),       
-        NavbarSettings.class.getName(),
+        NavbarTab.class.getName(),
+        NavBarButtonStyle.class.getName(),
+        NavbarStyleDimenSettings.class.getName(),
+        NavbarButtonFragment.class.getName(),
+        ButtonsListViewSettings.class.getName(),      
+        NavbarSettings.class.getName()
     };
 
     @Override
