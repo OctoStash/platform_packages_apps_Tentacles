@@ -210,8 +210,7 @@ public class SettingsActivity extends PreferenceActivity implements ButtonBarHan
         NavbarStyleDimenSettings.class.getName(),
         NavbarButtonFragment.class.getName(),
         ButtonsListViewSettings.class.getName(),      
-        NavbarSettings.class.getName(),
-        LockscreenStyle.class.getName()
+        NavbarSettings.class.getName()
     };
 
     @Override
