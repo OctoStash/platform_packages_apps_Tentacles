@@ -51,6 +51,7 @@ public class ClockSettings extends SettingsPreferenceFragment
     private static final String TAG = "ClockSettings";
 
     private static final String PREF_ENABLE = "clock_style";
+	private static final String PREF_FONT_STYLE = "font_style";
     private static final String PREF_AM_PM_STYLE = "status_bar_am_pm";
     private static final String PREF_COLOR_PICKER = "clock_color";
     private static final String PREF_CLOCK_DATE_DISPLAY = "clock_date_display";
