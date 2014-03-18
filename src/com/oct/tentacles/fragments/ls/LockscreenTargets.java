@@ -61,7 +61,9 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 
 public class LockscreenTargets extends Fragment implements
-        ShortcutPickerHelper.OnPickListener, GlowPadView.OnTriggerListener, OnIconPickListener {
+        ShortcutPickerHelper.OnPickListener,
+        GlowPadView.OnTriggerListener, OnIconPickListener {
+
     private static final String TAG = "LockscreenTargets";
 
     private static final int DLG_SETUP_TARGETS   = 0;
@@ -423,12 +425,8 @@ public class LockscreenTargets extends Fragment implements
     }
 
     @Override
-    public void onTargetChange(View v, int target) {
+    public void onTargetChange(View v, int whichHandle) {
     }
-
-    @Override
-    public void onTrigger(View v, final int target) {
-        mTargetIndex = target;
 
     @Override
     public void onTrigger(View v, final int target) {
